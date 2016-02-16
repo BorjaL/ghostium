@@ -73,7 +73,7 @@ module.exports = function(grunt) {
           src: [
             'assets',
             'partials',
-            'app'
+            '*.hbs'
           ]
         }]
       }
@@ -328,7 +328,7 @@ module.exports = function(grunt) {
           dot: true,
           cwd: '<%= dir.build %>',
           src: ['**'],
-          dest: 'app'
+          dest: ''
         }]
       }
     },

@@ -5,7 +5,7 @@
 
   $(function () {
     var GHOSTIUM = window.GHOSTIUM;
-
+    changeCoverColor();
     // Cache a couple of useful elements
     // =================
     var $window   = $(window),
@@ -116,6 +116,8 @@
         $('[data-load-image]', $content).each(function() {
           ImageLoader.load($(this));
         });
+
+        changeCoverColor();
       });
 
       var _pjaxOptions = {
